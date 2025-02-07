@@ -14,6 +14,8 @@
             document.head.appendChild(link);
         }
 
+        
+
         // Call the function with the image URL
         window.onload = function() {
             setFaviconFromURL('https://media.discordapp.net/attachments/1291488522238169192/1337073759906955324/New_Project_10.png?ex=67a61e79&is=67a4ccf9&hm=cda0711809dd34308e7f5bd921bab0e9a6fd2c61ff869e01250c9b4377a2b81c&=&format=webp&quality=lossless&width=40&height=40');
@@ -67,6 +69,9 @@
         <button onclick="showPage('privacy')">Privacy Policy</button>
         <button onclick="showPage('wiki')">Wiki</button>
     </nav>
+    <div class="content" id="content">
+        <h2>Welcome to <b>Loading Page..</b></h2>
+    </div>
     <script>
         function showPage(page) {
             let content = document.getElementById('content');
