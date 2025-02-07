@@ -63,20 +63,17 @@
 <body>
     <header>Gorilla Vault</header>
     <nav class="nav-buttons">
-        <button onclick="showPage('main')">Main Page</button>
         <button onclick="showPage('privacy')">Privacy Policy</button>
         <button onclick="showPage('wiki')">Wiki</button>
     </nav>
     <div class="content" id="content">
-        <h2>Welcome to <b>Gorilla Vault!</b></h2>
+        <onclick="showPage('privacy')">Privacy Policy>
     </div>
 
     <script>
         function showPage(page) {
             let content = document.getElementById('content');
-            if (page === 'main') {
-                content.innerHTML = '<h2>Welcome to <b>Gorilla Vault!</b></h2>';
-            } else if (page === 'privacy') {
+            if (page === 'privacy') {
                 content.innerHTML = `
                     <h2>Privacy Policy</h2>
                     <h3>Last updated: May 8, 2024</h3>
